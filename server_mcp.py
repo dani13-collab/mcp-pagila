@@ -6,30 +6,36 @@ from tools import (
     pretty_actors
 )
 
-def mcp_server():
-    print("==========================================")
-    print(" SERVIDOR MCP - PAGILA")
-    print(" Acceso controlado | Solo lectura")
-    print("==========================================\n")
+def run_demo():
+    print("SERVIDOR MCP - PAGILA")
+    print("Acceso controlado | Solo lectura")
+    print("=" * 42)
 
-    print("Pregunta 1: ¿Qué tablas existen en la base de datos?")
-    pretty_tables()
+    print("\nPregunta 1: ¿Qué áreas del negocio de alquiler de películas se pueden analizar?")
+    print("ÁREAS DISPONIBLES PARA ANÁLISIS:")
+    print("- Películas")
+    print("- Actores")
+    print("- Categorías")
+    print("- Clientes")
+    print("- Alquileres")
+    print("- Pagos")
+    print("- Inventario")
+    print("- Tiendas")
 
-    print("\nPregunta 2: ¿Cuáles son las películas más alquiladas?")
+
+
+    print("\nPregunta 2: ¿Cuáles son las películas más alquiladas por los clientes?")
     pretty_movies()
 
-    print("\nPregunta 3: ¿Quiénes son los clientes más activos?")
+    print("\nPregunta 3: ¿Quiénes son los clientes más activos del sistema de alquiler?")
     pretty_customers()
 
-    print("\nPregunta 4: ¿Qué categorías generan más ingresos?")
+    print("\nPregunta 4: ¿Qué categorías de películas generan mayores ingresos?")
     pretty_categories()
 
-    print("\nPregunta 5: ¿Qué actores aparecen en más películas?")
+    print("\nPregunta 5: ¿Qué actores participan en más películas del catálogo?")
     pretty_actors()
 
-    print("\n==========================================")
-    print(" FIN DE DEMOSTRACIÓN MCP")
-    print("==========================================")
 
 if __name__ == "__main__":
-    mcp_server()
+    run_demo()
